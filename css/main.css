@@ -1,0 +1,916 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    width: 80%;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+/* ===== ScrollMagic Class ==============================================
+   Author: Petr Tichy - ihatetomatoes.net
+   ========================================================================== */
+
+
+body {
+    font: 16px/1.5 Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 1000%;
+    margin: 0 5%;
+}
+hr {
+    width: 10vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*================================SECTION STYLE=================================*/
+#home {
+    display: none;
+    padding: none;
+}
+#about {
+    padding: none;
+    display: none;
+}
+#sonhm {
+    display: none;
+    padding: none;
+}
+#kagawa {
+    display: none;
+    padding: none;
+}
+#park {
+    padding:none;
+    display: none;
+}
+#nakata {
+    padding: none;
+    display: none;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* =Main */
+#intro {
+    width: 100%;
+}
+svg:hover{
+    fill: cornsilk;
+}
+#intro .content {
+    color: cornsilk;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+#intro video {
+    width: 100%;
+}
+#intro img {
+    width: 100%;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*----------------------------------------------PROJECT 01---------------------------*/
+.project01 {
+    text-align: center;
+    background-color: white;
+    padding: 4vh 0 12vh 0; /*200px 0*/
+    border-bottom: 1px #ebebeb solid;
+    opacity:1; /*0*/
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+#project01 .p1 {
+    background-color: none;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    width: 50%;
+    margin-bottom: 3vh;
+    font-size: 40px;
+    padding: none
+}
+#project01 p {
+    background-color: none;
+    margin: 0 auto;
+    color: black;
+    margin-top: 120%;
+    font-size: 30px;
+}
+#project01 label {
+    display: inline-block;
+    cursor: pointer;
+}
+#project01 .son {
+    background-image: url(/img/son_ptr1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 380px;
+    height: 500px;
+    padding: none;
+    margin: 0 50px;
+}
+#project01 .son:hover {
+    background-image: url(/img/son_ptr2.png);
+}
+#project01 .ka {
+    background-image: url(/img/ka_ptr1.png);
+    background-repeat: no-repeat;
+    padding: none;
+    margin: 0 50px;
+    background-size: cover;
+    width: 380px;
+    height: 500px;
+}
+#project01 .ka:hover {
+    background-image: url(/img/ka_ptr2.png);
+}
+#project01 .park {
+    background-image: url(/img/park_ptr1.png);
+    background-repeat: no-repeat;
+    padding: none;
+    margin: 0 50px;
+    background-size: cover;
+    width: 380px;
+    height: 500px;
+}
+#project01 .park:hover {
+    background-image: url(/img/park_ptr2.png);
+}
+#project01 .na {
+    background-image: url(/img/na_ptr1.png);
+    background-repeat: no-repeat;
+    padding: none;
+    margin: 0 50px;
+    background-size: cover;
+    width: 380px;
+    height: 500px;
+}
+#project01 .na:hover {
+    background-image: url(/img/na_ptr2.png);
+}
+
+#cover:checked ~ #home,
+#player1:checked ~ #sonhm,
+#player2:checked ~ #kagawa,
+#player3:checked ~ #park,
+#player4:checked ~ #nakata {
+    display: block;
+}
+
+@media only screen and (max-width: 2000px) {
+    #project01 .son {
+        width: 195px;
+        height: 250px;
+        margin: 0 50px;
+        }
+    #project01 .ka {
+        width: 195px;
+        height: 250px;
+        margin: 0 50px;
+        }
+    #project01 .na {
+        width: 195px;
+        height: 250px;
+        margin: 0 50px;    
+        }
+    #project01 .park {
+        width: 195px;
+        height: 250px;
+        margin: 0 50px;
+        }
+    #project01 .p1 {
+            font-size: 17px;
+        }
+    #project01 p {
+        font-size: 15px;
+            }
+    }
+@media only screen and (max-width: 1360px) {
+        #project01 .son {
+        margin: 0 10%;
+        }
+        #project01 .ka {
+        margin: 0 10%;
+        }
+        #project01 .na {
+        margin: 0 10%;
+        }
+        #project01 .park {
+        margin: 0 10%;
+        }
+        #project01 p {
+        font-size: 14px;
+        }
+    }
+/*====================================================SON+PARK==============================*/
+/*----------------------------------------------------PROJECT 02 (SUB-COVER)----------------*/
+.project02 {
+    position: relative;
+    text-align: center;
+    height: auto;
+    background-color: rgb(238, 238, 238);
+    padding: 500px 0; /*200px 0*/
+    border-bottom: 1px #ebebeb solid;
+    opacity:1; /*0*/
+    transform: translateY(50px);
+    transition: all 1s ease-out;  
+}
+@media only screen and (max-width: 2000px) {
+    .project02 {
+        padding: 150px 0;
+    }
+}
+#project02 img {
+    border: none;
+    max-width: 48vw;
+    height: auto;
+    margin-left: -12%;
+}
+.project02-content {
+    background-color: none;
+    position: absolute;
+    text-align: left;
+    width: 40vw;
+    margin-left: 52vw;
+    margin-top: 5%;
+}
+#project02 h2 {
+    line-height: 2vh;
+    font-size: 6vw;
+    font-weight: 700;
+    color: rgb(255, 49, 83)
+}
+#project02 p {
+    margin-top: -7%;
+    font-size: 2.5vw;
+    color: black;
+    padding: 3% 0;
+}
+
+/*----------------------------------------------------PROJECT 03 (ABOUT)-------------------*/
+.project03 {
+    position: relative;
+    text-align: center;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(/img/bg.png);
+    padding: 15% 0; 
+    border-bottom: 1px #ebebeb solid;
+    opacity: 1; /*0*/
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+.project03-img1 {
+    position: absolute;
+    display: none;
+    vertical-align: top;
+    margin-left: 9vw;
+    margin-top: -5%;
+    height: auto;
+    width: 40%;
+}
+.project03-img2 {
+    position: absolute;
+    display: none;
+    vertical-align: top;
+    margin-left: 9vw;
+    margin-top: -5%;
+    height: auto;
+    width: 40%;
+}
+.project03-img3 {
+    position: absolute;
+    display: none;
+    vertical-align: top;
+    margin-left: 9vw;
+    margin-top: -5%;
+    height: auto;
+    width: 40%;
+}
+.project03-img4 {
+    position: absolute;
+    display: none;
+    vertical-align: top;
+    margin-left: 9vw;
+    margin-top: -5%;
+    height: auto;
+    width: 40%;
+}
+.project03-img5 {
+    position: absolute;
+    /*display: none;*/
+    vertical-align: top;
+    margin-left: 9vw;
+    margin-top: -5%;
+    height: auto;
+    width: 40%;
+}
+.project03-content {
+    background-color: none;
+    display: inline-block;
+    text-align: left;
+    width: 32%;
+    margin-top: 0.5%;
+    margin-left: 37vw;
+}
+#project03 h2 {
+    color: #f4b572;
+    font-size: 2vw;
+    margin-bottom: -2%;
+}
+#project03 p {
+    font-size: 0.9vw;
+    color: rgb(0, 0, 0);
+}
+#project03 label {
+    margin-top: 0%;
+    display: inline-block;
+    padding: none;
+    width: 4vw;
+    height: 4vw;
+    cursor: pointer;
+}
+#project03 label:hover {
+    border: 2px solid #f4b572;
+    border-radius: 100%;
+}
+input {
+    display: none;
+}
+
+#trigger1:checked ~ .project03-img1,
+#trigger2:checked ~ .project03-img2,
+#trigger3:checked ~ .project03-img3,
+#trigger4:checked ~ .project03-img4 {
+    display: block;
+}
+
+@media (orientation: portrait) {
+    .project03 {
+        height: 90vh;
+        background-position: center top;
+        background-size: 100%;
+        background-image: url(/img/bg_mobile.png);
+        padding: 15% 0; 
+        border-bottom: 1px #ebebeb solid;
+    }
+    .project03-img1 {
+        position: relative;
+        display: none;
+        margin-top: 10%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 60vw;
+    }
+    .project03-img2 {
+        position: relative;
+        display: none;
+        margin-top: 10%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 27vw;
+    }
+    .project03-img3 {
+        position: relative;
+        display: none;
+        margin-top: 10%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 27vw;
+    }
+    .project03-content {
+        background-color: aqua;
+        width: 65%;
+        margin: 0 auto;
+    }
+    #project03 h2 {
+        font-size: 5vw;
+    }
+    #project03 p {
+        font-size: 2.5vw;
+    }
+    #project03 label {
+        width: 12vw;
+    }
+    #project03 label:hover {
+        width: 14vw;
+    }
+    
+}
+/*------------------------------------------PROJECT 04 (BEST GOAL)-----------------------------*/
+.project04 {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 150px 0; /*200px 0*/
+    border-bottom: 1px #ebebeb solid;
+    opacity:1; /*0*/
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+.project04-content-left {
+    position: absolute;
+    background-color: none;
+    padding: 0 3%;
+    display: inline-block;
+    margin-top: -3%;
+    margin-left: -0.5%;
+    vertical-align: top;
+    color: orange;
+}
+.project04-content-right {
+    background-color: none;
+    display: inline-block;
+    position: absolute;
+    text-align: left;
+    margin-top: -1%;
+    margin-left: 32.5vw;
+    width: 35%;
+    font-size: 1vw;
+}
+#project04 img {
+    margin-top: 5%;
+    width: 60%;
+}
+#project04 video {
+    margin-top: 5%;
+    max-width: 55vw;
+}
+#project04 h2 {
+    background-color: none;
+    font-size: 2vw;
+}
+#project04 .line {
+    border: 0.3vh solid rgb(255, 49, 83);
+    width: 23vw;
+    margin-left: -10vw;
+    margin-top: -10%;
+
+}
+/*==============================================KAGAWA + NAKAT=====================*/
+/*----------------------------------------------------PROJECT 02B (SUB-COVER)----------------*/
+.project02b {
+    position: relative;
+    text-align: center;
+    height: auto;
+    background-color: rgb(238, 238, 238);
+    padding: 500px 0; /*200px 0*/
+    border-bottom: 1px #ebebeb solid;
+    opacity:1; /*0*/
+    transform: translateY(50px);
+    transition: all 1s ease-out;  
+}
+@media only screen and (max-width: 2000px) {
+    .project02b {
+        padding: 150px 0;
+    }
+}
+#project02b img {
+    border: none;
+    max-width: 48vw;
+    height: auto;
+    margin-left: -12%;
+}
+.project02b-content {
+    background-color: none;
+    position: absolute;
+    text-align: left;
+    width: 40vw;
+    margin-left: 52vw;
+    margin-top: 5%;
+}
+#project02b h2 {
+    line-height: 2vh;
+    font-size: 6vw;
+    font-weight: 700;
+    color: rgb(255, 49, 83)
+}
+#project02b p {
+    margin-top: -7%;
+    font-size: 2.5vw;
+    color: black;
+    padding: 3% 0;
+}
+
+/*----------------------------------------------------PROJECT 03B (ABOUT)-------------------*/
+.project03b {
+    position: relative;
+    text-align: center;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(/img/bg2.png);
+    padding: 15% 0; 
+    border-bottom: 1px #ebebeb solid;
+    opacity: 1; /*0*/
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+.project03b-img1 {
+    position: absolute;
+    /*display: none;*/
+    vertical-align: top;
+    margin-left: 9vw;
+    margin-top: -5%;
+    height: auto;
+    width: 40%;
+}
+.project03b-img2 {
+    position: absolute;
+    display: none;
+    vertical-align: top;
+    margin-left: 9vw;
+    margin-top: -5%;
+    height: auto;
+    width: 40%;
+}
+.project03b-img3 {
+    position: absolute;
+    display: none;
+    vertical-align: top;
+    margin-left: 9vw;
+    margin-top: -5%;
+    height: auto;
+    width: 40%;
+}
+.project03b-img4 {
+    position: absolute;
+    display: none;
+    vertical-align: top;
+    margin-left: 9vw;
+    margin-top: -5%;
+    height: auto;
+    width: 40%;
+}
+.project03b-img5 {
+    position: absolute;
+    display: none;
+    vertical-align: top;
+    margin-left: 9vw;
+    margin-top: -5%;
+    height: auto;
+    width: 40%;
+}
+.project03b-img6 {
+    position: absolute;
+    display: none;
+    vertical-align: top;
+    margin-left: 9vw;
+    margin-top: -5%;
+    height: auto;
+    width: 40%;
+}
+.project03b-img7 {
+    position: absolute;
+    display: none;
+    vertical-align: top;
+    margin-left: 9vw;
+    margin-top: -5%;
+    height: auto;
+    width: 40%;
+}
+.project03b-img8 {
+    position: absolute;
+    display: none;
+    vertical-align: top;
+    margin-left: 9vw;
+    margin-top: -5%;
+    height: auto;
+    width: 40%;
+}
+.project03b-content {
+    background-color: none;
+    display: inline-block;
+    text-align: left;
+    width: 32%;
+    margin-top: 0.5%;
+    margin-left: 37vw;
+}
+#project03b h2 {
+    color: #f4b572;
+    font-size: 2vw;
+    margin-bottom: -2%;
+}
+#project03b p {
+    font-size: 0.9vw;
+    color: rgb(0, 0, 0);
+}
+#project03b label {
+    margin-top: 0%;
+    display: inline-block;
+    padding: none;
+    width: 4vw;
+    height: 4vw;
+    cursor: pointer;
+}
+#project03b label:hover {
+    border: 2px solid #f4b572;
+    border-radius: 100%;
+}
+
+#trigger1b:checked ~ .project03b-img1,
+#trigger2b:checked ~ .project03b-img2,
+#trigger3b:checked ~ .project03b-img3,
+#trigger4b:checked ~ .project03b-img4,
+#trigger5b:checked ~ .project03b-img5 {
+    display: block;
+}
+
+/*------------------------------------------PROJECT 04B (BEST GOAL)-----------------------------*/
+.project04b {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 150px 0; /*200px 0*/
+    border-bottom: 1px #ebebeb solid;
+    opacity:1; /*0*/
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+.project04b-content-left {
+    position: absolute;
+    background-color: none;
+    padding: 0 3%;
+    display: inline-block;
+    margin-top: -3%;
+    margin-left: -0.5%;
+    vertical-align: top;
+    color: orange;
+}
+.project04b-content-right {
+    background-color: none;
+    display: inline-block;
+    position: absolute;
+    text-align: left;
+    margin-top: -1%;
+    margin-left: 32.5vw;
+    width: 35%;
+    font-size: 1vw;
+}
+#project04b img {
+    margin-top: 5%;
+    width: 60%;
+}
+#project04b video {
+    margin-top: 5%;
+    max-width: 55vw;
+}
+#project04b h2 {
+    background-color: none;
+    font-size: 2vw;
+}
+#project04b .line {
+    border: 0.3vh solid rgb(255, 49, 83);
+    width: 23vw;
+    margin-left: -10vw;
+    margin-top: -10%;
+
+}
+
+/*---------------------------------------------------------------------------------*/
+#main {
+    position: relative;
+    background-color:#FFF;
+}
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/* --------------------------------------------=Footer ----------------------------*/
+.footer-container {
+    position: relative;
+    bottom: 0;
+    height: 6vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: none;
+    text-align: center;
+    background-color:none; 
+    border: 0.5px solid grey;
+}
+#home .footer-container {
+    display: none;
+}
+.footer-container .wrapper {
+    margin: 0 auto;
+    width: 90%; 
+    height: 5vh;
+    background-color: none;
+}
+#footer-container p {
+    background-color: none;
+    font-size: 35px;
+    display: inline;
+    margin: 0 auto;
+    padding: 1vh 5%;
+    color: black; 
+}
+#footer-container label {
+    padding: 1vh 0;
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+}
+#footer-container label:hover {
+    cursor: pointer;
+    background-color: rgb(255, 49, 83);
+}
+@media only screen and (max-width: 2000px) {
+    #footer-container p {
+        font-size: 14px;
+    }
+}   
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
